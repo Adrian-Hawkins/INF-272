@@ -1,0 +1,51 @@
+<!--
+  *Adrian Hawkins
+  *u21669831
+-->
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a7cad7f5ee.js" crossorigin="anonymous"></script>
+
+</head>
+<body onload="initialisePage()">
+    <nav class="navbar navbar-light bg-light border border-dark">
+        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-clapperboard"></i></a>
+        <a class="navbar-brand" href="cart.html"><i class="fa-solid fa-cart-plus"></i><span id="ticket">0</span></a>
+    </nav>
+    <h5 id="test">Movies</h5>
+    <div class="containter">
+        <div id="movies" class="row">
+        </div>
+    </div>
+    <script src="data.js"></script>
+
+    <div class="container">
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="movieTitle"></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p><span class="font-weight-bold">Title: </span> <span id="dTitle"></span></p>
+                <p><span class="font-weight-bold">Director/s: </span> <span id="dDirector"></span></p>
+                <p><span class="font-weight-bold">Release Year: </span> <span id="dRelease"></span></p>
+                <p><span class="font-weight-bold">Runtime: </span> <span id="dRuntime"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
